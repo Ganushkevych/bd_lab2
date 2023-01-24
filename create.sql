@@ -10,7 +10,7 @@ CREATE TABLE Authors
 CREATE TABLE Issue
 (
 	issue_id	INT		NOT NULL,
-	issue_title		char(30)	NULL,
+	issue_title		char(100)	NULL,
 	authors_id       INT       NOT NULL,
 	info_id       INT       NOT NULL
 );
@@ -22,7 +22,7 @@ CREATE TABLE Info
 	active_years	char(20)	NULL,
 	publish_date	char(20)	NULL,
 	issue_description	char(100)	NULL,
-	format		char(10)	NULL,
+	format		char(20)	NULL,
 	rating		char(20)	NULL,
 	price		char(10)	NULL
 );
