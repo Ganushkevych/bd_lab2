@@ -12,7 +12,7 @@ CREATE TABLE Issue
 	issue_id	INT		NOT NULL,
 	issue_title		char(30)	NULL,
 	authors_id       INT       NOT NULL,
-	info_id       INT       NOT NULL,
+	info_id       INT       NOT NULL
 );
 
 CREATE TABLE Info
