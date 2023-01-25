@@ -14,17 +14,17 @@ ORDER BY rating
 '''
 
 query_2 = '''
-SELECT TRIM(issue_title), TRIM(imprint)
-FROM issue, authors
-WHERE issue.authors_id = authors.authors_id
-ORDER BY imprint desc
-'''
-
-query_3 = '''
 SELECT TRIM(issue_title), price
 FROM issue, info
 WHERE issue.info_id = info.info_id
 ORDER BY price
+'''
+
+query_3 = '''
+SELECT TRIM(issue_title), TRIM(imprint)
+FROM issue, authors
+WHERE issue.authors_id = authors.authors_id
+ORDER BY imprint desc
 '''
 
 conn = psycopg2.connect(user=username, password=password, dbname=database, host=host, port=port)
