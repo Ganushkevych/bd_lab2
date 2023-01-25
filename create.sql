@@ -24,7 +24,7 @@ CREATE TABLE Info
 	issue_description	char(100)	NULL,
 	format		char(20)	NULL,
 	rating		char(20)	NULL,
-	price		double	NULL
+	price		float	NULL
 );
 
 ALTER TABLE Authors ADD PRIMARY KEY (authors_id);
